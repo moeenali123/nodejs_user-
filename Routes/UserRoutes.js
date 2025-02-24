@@ -3,7 +3,7 @@ const express = require('express')
 const router = express.Router()
 
 const User = require('./../models/userSchema')
-
+/
 router.post('/', async (req, res) => {
     try {
         const data = req.body
@@ -73,6 +73,9 @@ router.delete('/:id', async (req,res) => {
     }
     
 })
+
+// comment added
+
 
 
 module.exports = router;
